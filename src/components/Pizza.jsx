@@ -4,7 +4,7 @@ function Pizza({ pizzaObj }) {
     <li className="flex space-x-4 flex-shrink-0 mx-8">
       <img
         className={`rounded-md transition-all duration-300 ${
-          pizzaObj.soldOut ? 'grayscale' : ''
+          pizzaObj.soldOut && 'grayscale'
         }`}
         src={pizzaObj.photoName}
         alt={pizzaObj.name}
